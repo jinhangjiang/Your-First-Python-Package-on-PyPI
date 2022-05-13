@@ -29,3 +29,9 @@ And here is the list of the core files you will need:
 
 I know that's a lot. But bear with me. You only need to make necessary changes to some of them and the rest will be stay as default.
 
+## Step 3
+
+Install the following pathon package in your cmd:
+    pip install setuptools
+    pip install twine
+    pip install wheel
