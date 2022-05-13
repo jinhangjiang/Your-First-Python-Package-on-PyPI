@@ -17,21 +17,7 @@ Fork this repository to your own github account.
 
 And here is the list of core files you will need:
 
-reader/
-│
-├── reader/
-│   ├── config.txt
-│   ├── feed.py
-│   ├── __init__.py
-│   ├── __main__.py
-│   └── viewer.py
-│
-├── tests/
-│   ├── test_feed.py
-│   └── test_viewer.py
-│
-├── MANIFEST.in
-├── README.md
-└── setup.py
-
+* src
+  * __init__.py
+  * your_main_code.py  
 
