@@ -19,5 +19,13 @@ And here is the list of core files you will need:
 
 * src
   * __init__.py
-  * your_main_code.py  
+  * your_main_code.py  (This is only one module, if you have multi-modules included in this package, you probably want to create subfolders for them)
+* setup.py
+* README.md
+* MANIFEST.in
+* LICENSE
+* pyproject.toml
+* CHANGELOG.md
+
+I know that's a lot. But bear with me. You only need to make necessary changes to some of them and the rest will be stay as default.
 
