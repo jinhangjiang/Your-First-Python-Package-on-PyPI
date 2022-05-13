@@ -33,10 +33,12 @@ I know that's a lot. But bear with me. You only need to make necessary changes t
 
 Install the following pathon package in your cmd:
 
-    pip install setuptools
-    pip install twine
-    pip install wheel
-    pip install pytest # optional
+```css
+pip install setuptools
+pip install twine
+pip install wheel
+pip install pytest # optional
+```
 
 You will need them later.
 
@@ -56,6 +58,3 @@ Do the following changes in ANY order you want:
 
 ## Step 5
 
-```css
-import pandas as pd
-```
