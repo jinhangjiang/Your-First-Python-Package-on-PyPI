@@ -56,4 +56,6 @@ Do the following changes in ANY order you want:
 
 ## Step 5
 
-
+```css
+import pandas as pd
+```
