@@ -15,7 +15,7 @@ Note: Let's always try your package on the test site first to avoid mistakes in 
 
 Fork this repository to your own github account.
 
-And here is the list of core files you will need:
+And here is the list of the core files you will need:
 
 * src
   * __init__.py
