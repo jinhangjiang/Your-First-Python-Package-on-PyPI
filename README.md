@@ -58,3 +58,21 @@ Do the following changes in ANY order you want:
 
 ## Step 5
 
+You have multiple choices to perform the the rest of steps starting step 6. Here are two examples:
+
+1. Do it in *[cmd]: Command Prompt
+- In your local, open the cmd and navigate to the directory where your package is typing the following:
+```css
+# First, change root disk
+C:\User\Yourname> d:
+
+# Second, navigate to the folder
+D:\> cd D:\my_works\Your-First-Python-Package-on-PyPI
+```
+
+2. Do it in Jupyter Notebook terminal:
+```css
+C:\User\Yourname> jupyter notebook --notebook-dir D:/my_works/Your-First-Python-Package-on-PyPI
+```
+
+## Step 6
