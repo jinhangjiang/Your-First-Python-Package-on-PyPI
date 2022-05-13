@@ -13,7 +13,7 @@ Note: Let's always try your package on the test site first to avoid mistakes in 
 
 ## Step 2
 
-Fork this repository to your own github account.
+Fork this repository to your own GitHub account and make it available in your local. You can make the most changes on GitHub, but you will need to publish your package via cmd with those files available in local.
 
 And here is the list of the core files you will need:
 
@@ -32,6 +32,22 @@ I know that's a lot. But bear with me. You only need to make necessary changes t
 ## Step 3
 
 Install the following pathon package in your cmd:
+
     pip install setuptools
     pip install twine
     pip install wheel
+
+You will need them later.
+
+## Step 4
+
+Do the following changes in any order you want:
+
+- Replace your_main_code.py in src folder with your own python package and leave __init_.py as it is
+- Make changes to setup.py, instructions included in that file.
+- Pick your own license. 
+  - Open the LICENSE file, click on Edit, click "Choose a license template", and select the license fullfills your needs.
+  - If you have no idea which license works for you, you can use the MIT license, which is one of the most common choices.
+  - Or, you can use this link to pick one: https://choosealicense.com/
+- Update CHANGELOG.md to reflect version information
+- Optional: create a test.py and put the file in the tests folder. Or you can remove the whole folder if you are confident that everything works great in your module.
