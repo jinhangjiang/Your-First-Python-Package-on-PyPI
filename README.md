@@ -15,4 +15,23 @@ Note: Let's always try your package on the test site first to avoid mistakes in 
 
 Fork this repository to your own github account.
 
+And here is the list of core files you will need:
+
+reader/
+│
+├── reader/
+│   ├── config.txt
+│   ├── feed.py
+│   ├── __init__.py
+│   ├── __main__.py
+│   └── viewer.py
+│
+├── tests/
+│   ├── test_feed.py
+│   └── test_viewer.py
+│
+├── MANIFEST.in
+├── README.md
+└── setup.py
+
 
