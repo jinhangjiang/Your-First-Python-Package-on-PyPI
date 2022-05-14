@@ -106,3 +106,22 @@ You should see something like this:
 Checking distribution dist/TheNameofYourPackage-TheVersionofYourPackage-1.0.0-py3-none-any.whl: Passed
 Checking distribution dist/TheNameofYourPackage-TheVersionofYourPackage.tar.gz: Passed
 ```
+
+## Step 8
+
+Upload your package to TestPyPI:
+```css
+twine upload --repository-url https://test.pypi.org/legacy/ dist/* #pay attention there is an extra space before dist.
+```
+Then you will see a link leading to the testing version of your package on TestPyPI. Check it out! If there is any typo or incompatible bugs, fix them before you upload it to the real PyPI.
+
+And, now, it is the most exciting moment, upload your package to PyPI to help hundreds of thousands of people in our community:
+```css
+twine upload dist/*
+```
+By this point, your package should be officially online and can be "pip install" by anyone at anytime from anywhere. Big moment! I still remember how I felt at the moment when I saw my first package is out there. I told myself, that's why I code! CONGRATULATIONS!!!  
+
+
+## A few tips
+
+- Whenever you want to update your package, you should remove the build and dist folders, and repeat steps 5-8.
