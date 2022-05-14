@@ -4,7 +4,7 @@
 
 ## Step 1
 
-Go to the following two websites to register, respectively.
+Go to the following two websites to register your own account, respectively.
 - PyPI test: https://test.pypi.org/
 - PyPI: https://pypi.org/
 
@@ -76,4 +76,18 @@ C:\User\Yourname> jupyter notebook --notebook-dir D:/my_works/Your-First-Python-
 ```
 
 ## Step 6
+
+In this step, we will use the following code in cmd/terminal to build your package:
+```css
+python setup.py sdist bdist_wheel
+```
+
+Once you run the code, you will see the following two folders:
+- build
+- dist
+
+Under the dist folder, you will see a 'tar' file called "TheNameofYourPackage-TheVersionofYourPackage.tar.gz". At this point of time, if you do not need to publish your code in public, instead, you just want to share your code with your friends or colleagues, you may just share this file with them. All they need to do is to do "pip install" to use your code:
+```css
+pip install relative_path_to_yourpackage.tar.gz  
+```
 
