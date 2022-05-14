@@ -2,6 +2,8 @@
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?multiline=true&width=1200&lines=An+end+to+end+project+helps+you+publish+your+first+python+package+in+a+simple+way.++++++++++)](https://git.io/typing-svg)
 
+*Note: everything in this demo is conducted in Windows OS.
+
 ## Step 1
 
 Go to the following two websites to register your own account, respectively.
@@ -82,7 +84,7 @@ In this step, we will use the following code in cmd/terminal to build your packa
 python setup.py sdist bdist_wheel
 ```
 
-Once you run the code, you will see the following two folders:
+Once you run the code, you will see the following two folders in the current directory:
 - build
 - dist
 
@@ -91,3 +93,16 @@ Under the dist folder, you will see a 'tar' file called "TheNameofYourPackage-Th
 pip install relative_path_to_yourpackage.tar.gz  
 ```
 
+## Step 7 (Optional)
+
+Now, you are about publishing your package to PyPI. Before you make it public, one more thing you may want to do is to test if your package will work as expected once people download them. What you can do is to create folder called "test", and create a test.py, which include some sample implementations of your package. Then, type "pytest" in your cmd/terminal. If everything works fine, it will run your test.py automatically and pass. Otherwise, it will raise errors and you should fix the bugs accordingly before you move to next step.
+
+And here is one more thing you might want to try to test if the architecture of your package is good to go. In the cmd/terminal, type the following code:
+```css
+twine check dist/*
+```
+You should see something like this:
+```
+Checking distribution dist/TheNameofYourPackage-TheVersionofYourPackage-1.0.0-py3-none-any.whl: Passed
+Checking distribution dist/TheNameofYourPackage-TheVersionofYourPackage.tar.gz: Passed
+```
