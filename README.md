@@ -124,5 +124,5 @@ By this point, your package should be officially online and can be "pip install"
 
 ## A few tips
 
-- Whenever you want to update your package, you should remove the build and dist folders, and repeat steps 5-8.
+- Whenever you want to update your package, you should remove the 'build' and 'dist' folders, and repeat steps 5-8.
 - Do not publish packages arbitrarily. Even though there are no hard restrictions on what you can or cannot publish, make sure you are uploading something that is actually meaningful and someone will benefit from your work. 
