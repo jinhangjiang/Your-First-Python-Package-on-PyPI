@@ -136,7 +136,7 @@ Under the dist folder, you will see a 'tar' file called "TheNameofYourPackage-Th
 pip install relative_path_to_yourpackage.tar.gz  
 ```
 
-## Step 7 (Optional)
+## OPTIONAL
 
 Now, you are about publishing your package to PyPI. Before you make it public, one more thing you may want to do is to test if your package will work as expected once people download them. What you can do is to create folder called "test", and create a test.py, which include some sample implementations of your package. Then, type "pytest" in your cmd/terminal. If everything works fine, it will run your test.py automatically and pass. Otherwise, it will raise errors and you should fix the bugs accordingly before you move to next step.
 
@@ -150,7 +150,7 @@ Checking distribution dist/TheNameofYourPackage-TheVersionofYourPackage-1.0.0-py
 Checking distribution dist/TheNameofYourPackage-TheVersionofYourPackage.tar.gz: Passed
 ```
 
-## Step 8
+## Step 7
 
 Upload your package to TestPyPI:
 ```css
@@ -167,7 +167,7 @@ By this point, your package should be officially online and can be "pip install"
 
 ## A few tips
 
-- Whenever you want to update your package, you should remove the 'build' and 'dist' folders, make change to your code, CHANGLOG, and the version number in the "setup.py". And repeat steps 5-8.
+- Whenever you want to update your package, you should remove the 'build' and 'dist' folders, make change to your code, CHANGLOG, and the version number in the "setup.py". And repeat steps 5-7.
 - You may upgrade your package after the updates by doing this: ___pip install YOURPACKAGENAME --upgrade___
 - You can always find your package on PyPi here: ___ht<span>tp://</span>pypi.org/project/YOURPACKAGENAME/___
 - Do not publish packages arbitrarily. Even though there are no hard restrictions on what you can or cannot publish, make sure you are uploading something that is actually meaningful and someone will benefit from your work. 
