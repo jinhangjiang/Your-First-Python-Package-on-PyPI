@@ -50,7 +50,14 @@ Inside each folder, update the "\_\_init\_\_.py" by doing this:
     from ._Class2 import Function1
     ... 
 
-Then the users will be able to import your library like this:
+In the main folder, update the "\_\_init\_\_.py" by doing this:
+
+    from Lib1._Class1 import Function1
+    from Lib1._Class1 import Function2
+    from Lib1._Class2 import Function1
+    ... 
+
+Then the users will be able to import your library properly like this:
 
     from YourPackage.Class1 import Function1
     
@@ -161,4 +168,6 @@ By this point, your package should be officially online and can be "pip install"
 ## A few tips
 
 - Whenever you want to update your package, you should remove the 'build' and 'dist' folders, make change to your code, CHANGLOG, and the version number in the "setup.py". And repeat steps 5-8.
+- You may upgrade your package after the updates by doing this: _pip install YOURPACKAGE --upgrade
+- You can always find your package on PyPi here: _https://pypi.org/project/YOURPACKAGENAME/
 - Do not publish packages arbitrarily. Even though there are no hard restrictions on what you can or cannot publish, make sure you are uploading something that is actually meaningful and someone will benefit from your work. 
