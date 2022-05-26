@@ -168,6 +168,6 @@ By this point, your package should be officially online and can be "pip install"
 ## A few tips
 
 - Whenever you want to update your package, you should remove the 'build' and 'dist' folders, make change to your code, CHANGLOG, and the version number in the "setup.py". And repeat steps 5-8.
-- You may upgrade your package after the updates by doing this: _pip install YOURPACKAGENAME --upgrade
-- You can always find your package on PyPi here: _ht<span>tp://</span>pypi.org/project/YOURPACKAGENAME/
+- You may upgrade your package after the updates by doing this: _pip install YOURPACKAGENAME --upgrade_
+- You can always find your package on PyPi here: _ht<span>tp://</span>pypi.org/project/YOURPACKAGENAME/_
 - Do not publish packages arbitrarily. Even though there are no hard restrictions on what you can or cannot publish, make sure you are uploading something that is actually meaningful and someone will benefit from your work. 
