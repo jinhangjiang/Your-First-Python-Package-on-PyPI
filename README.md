@@ -20,8 +20,8 @@ Fork this repository to your own GitHub account and make it available in your lo
 And here is the list of the core files you will need:
 
 * src
-  * __init__.py
-  * your_main_code.py  (This is only one module, if you have multi-modules included in this package, you probably want to create subfolders for them)
+  * \_\_init\_\_.py
+  * your_main_code.py  (This is only one module, if you have multi-modules included in this package, you probably want to create subfolders for them. For details, check the OPTIONAL part following this section.)
 * setup.py
 * README.md
 * MANIFEST.in
@@ -30,6 +30,42 @@ And here is the list of the core files you will need:
 * CHANGELOG.md
 
 I know that's a lot. But bear with me. You only need to make necessary changes to some of them and the rest will be stay as default.
+
+## OPTIONAL: <br\>
+If you have multiple classes with functions created in separate files. You want to create the folders (or subfolders) following this convention:
+
+* Lib1
+  * \_\_init\_\_.py
+  * \_Class1.py
+  * \_Class2.py
+
+* Lib2
+ * ...
+ * ...
+
+Inside each folder, update the "\_\_init\_\_.py" by doing this:
+
+    from ._Class1 import Function1
+    from ._Class1 import Function2
+    from ._Class2 import Function1
+    ... 
+
+Then the users will be able to import your library like this:
+
+    from YourPackage.Class1 import Function1
+    
+If You want to import something from the main (previous) folder, here is what you should do:
+
+    from .._ClassFromThePreviousFolder import Function1
+    
+Consider add a list in your "\_\_init\_\_.py", so that the users can check what functions are available
+
+    __all__ = [ 'Function1',
+                'Function2',
+                ...,
+                'FunctionN'
+    ]
+    
 
 ## Step 3
 
