@@ -48,7 +48,7 @@ You will need them later.
 
 Do the following changes in ANY order you want:
 
-1. Replace your_main_code.py in src folder with your own python package and leave "__init__.py" as it is
+1. Replace your_main_code.py in src folder with your own python package and leave \_\_init\_\_.py as it is
 2. Make changes to setup.py, instructions included in that file.
 3. Pick your own license. 
   * Open the LICENSE file, click on Edit, click "Choose a license template", and select the license fullfills your needs.
