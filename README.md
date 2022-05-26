@@ -48,15 +48,15 @@ You will need them later.
 
 Do the following changes in ANY order you want:
 
-1. Replace your_main_code.py in src folder with your own python package and leave \_\_init\_\_.py as it is
+1. Replace your_main_code.py in src folder with your own python package and leave "\_\_init\_\_.py" as it is
 2. Make changes to setup.py, instructions included in that file.
 3. Pick your own license. 
   * Open the LICENSE file, click on Edit, click "Choose a license template", and select the license fullfills your needs.
   * If you have no idea which license works for you, you can use the MIT license, which is one of the most common choices.
   * Or, you can use this link to pick one: https://choosealicense.com/
 4. Update CHANGELOG.md to reflect version information
-5. Optional: create a test.py and put the file in the tests folder. Or you can remove the whole folder if you are confident that everything works great in your module.
-6. Delete everything in this README.md file, and update the file with the long decription of your package.
+5. Optional: create a "test.py" and put the file in the tests folder. Or you can remove the whole folder if you are confident that everything works great in your module.
+6. Delete everything in this "README.md" file, and update the file with the long decription of your package.
 
 ## Step 5
 
@@ -124,5 +124,5 @@ By this point, your package should be officially online and can be "pip install"
 
 ## A few tips
 
-- Whenever you want to update your package, you should remove the 'build' and 'dist' folders, make change to your code, and repeat steps 5-8.
+- Whenever you want to update your package, you should remove the 'build' and 'dist' folders, make change to your code, CHANGLOG, and the version number in the "setup.py". And repeat steps 5-8.
 - Do not publish packages arbitrarily. Even though there are no hard restrictions on what you can or cannot publish, make sure you are uploading something that is actually meaningful and someone will benefit from your work. 
