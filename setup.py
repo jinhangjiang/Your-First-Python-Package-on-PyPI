@@ -37,7 +37,10 @@ setup(
     '''
     If you have many modules included in your package, you want to use the following parameter instead of py_modules.
     '''
-#     package = ['ThePackageName'],
+#     packages = ['ThePackageName1',
+#                 'ThePackageName2',
+#                 ...
+#  ],
     
     '''
     Change the author name(s) and email(s) here.
