@@ -31,7 +31,7 @@ And here is the list of the core files you will need:
 
 I know that's a lot. But bear with me. You only need to make necessary changes to some of them and the rest will be stay as default.
 
-## OPTIONAL: <br\>
+## OPTIONAL:
 If you have multiple classes with functions created in separate files. You want to create the folders (or subfolders) following this convention:
 
 * Lib1
