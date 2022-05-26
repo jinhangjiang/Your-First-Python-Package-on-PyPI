@@ -2,8 +2,6 @@
 
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?multiline=true&width=1200&lines=An+end+to+end+project+helps+you+publish+your+first+python+package+in+a+simple+way.++++++++++)](https://git.io/typing-svg)
 
-*Note: everything in this demo is conducted in Windows OS.
-
 ## Step 1
 
 Go to the following two websites to register your own account, respectively.
