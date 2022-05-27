@@ -103,7 +103,7 @@ Do the following changes in ANY order you want:
 
 You have multiple choices for step 5 to perform the rest of the steps. Here are two examples:
 
-1. Do it in *[cmd]:Command Prompt
+1. Do it in cmd - Command Prompt
 - In your local, open the cmd, navigate to the directory where your package is and type the following:
 ```css
 # First, change root disk
