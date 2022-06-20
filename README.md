@@ -1,5 +1,7 @@
 # Your First Python Package on PyPI
 
+Reference Blog: https://towardsdatascience.com/an-end-to-end-guide-to-publish-your-python-package-bdb56639662c
+
 ## [![Typing SVG](https://readme-typing-svg.herokuapp.com?multiline=true&width=1200&lines=An+end+to+end+project+helps+you+publish+your+first+python+package+in+a+simple+way.++++++++++)](https://git.io/typing-svg)
 
 ## Step 1
