@@ -1,0 +1,17 @@
+# first line is the description of what the program does.
+# subsequent lines list positional arguments (PA), then key-value (KV)arguments (KVA).
+# Positional line:
+# PA_name|PA_Description|Is_out_dir|Is_Dir|Check_Directory|Is_file|Check_File|||
+# Key/Value Line:
+# KVA_name|KVA_Description|Is_out_dir|Is_Dir|Check_Directory|Is_file|Check_File|alternate_KVA_name|default value|type
+# -print_x_thresh|print every X threshold|0|0|0|0|0|--print_every_x_threshold|1|int
+# For KVAs for booleans, set default value to BOOLEANFALSE or BOOLEANTRUE.
+# If default is BOOLEANFALSE, then if you set the flag it will be True. (or vice-versa)
+# -get_top_words|get top most probable words|0|0|0|0|0|--get_top_probable_words|BOOLEANFALSE|
+#  out_dir must be given.
+# 
+# Example below. First line describes the program
+Compute AUCROC and other stats from infile. Print AUCROC and PR curves.
+out_dir|Top level directory that holds all the results|1|1|1|0|0|||
+infile|file path of file with a file with header in format call(1 or 0)\tX\tValue|0|0|0|1|1|||
+-print_x_thresh|print every X threshold|0|0|0|0|0|--print_every_x_threshold|1|int
