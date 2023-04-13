@@ -1,9 +1,4 @@
 #!/usr/bin/env python
-'''
-Help: see https://github.com/stewart-lab/cmdlogtime
-'''
-__author__='Ron Stewart'
-__author_email__='rstewart@morgridge.org'
 import argparse
 import os.path
 from pathlib import Path as ph
@@ -13,6 +8,7 @@ import pkg_resources
 
 # ---------------  FUNCTIONS -------------------
 def begin(command_line_def_file, write_msgs_to_stdout = 1):
+    print ("IN LOCAL")
     (start_time_secs, pretty_start_time) = get_time_and_pretty_time() 
     my_args = get_args(start_time_secs, pretty_start_time, command_line_def_file)
     addl_logfile = open_log_file(my_args["addl_logfile"])
@@ -165,16 +161,15 @@ def massage_and_validate_args(args, start_time_secs, pretty_start_time, command_
                 new_args[tmp_name] = args.__dict__[tmp_name]  # if it is a directory or file,  new_args[tmp_name] will be overlain below
                 if (arg_defs["is_dir"] == "1" or arg_defs["is_file"] == "1"):
                     if (args.__dict__[tmp_name]): #rms. I don't like this.  I think I need a different way to check that the flagged arg is NOT filled in, versus filled in incorrectly
-                        new_args[tmp_name] = os.path.abspath(args.__dict__[tmp_name])
+                	    new_args[tmp_name] = os.path.abspath(args.__dict__[tmp_name]) 	   
                 if (arg_defs["is_out_dir"]  == "1"):
-                    the_out_dir = new_args[tmp_name]
+                	the_out_dir = new_args[tmp_name]
                 if (arg_defs["check_dir"] == "1"):
-                    if (args.__dict__[tmp_name]):  
-                        #rms. I don't like this.  I think I need a different way to check that the flagged arg is NOT filled in, versus filled in incorrectly
-                        dirs_to_check.append(new_args[tmp_name])
+                    if (args.__dict__[tmp_name]):  #rms. I don't like this.  I think I need a different way to check that the flagged arg is NOT filled in, versus filled in incorrectly
+                	    dirs_to_check.append(new_args[tmp_name])
                 if (arg_defs["check_file"] == "1"):  # same goes for files, see rms comment 2 lines above.
-                    if (not args.__dict__[tmp_name].endswith("ZZZ")): #I think this is the correct logic... RMS.  magic number. Ugh.
-                        file_paths_to_check.append(new_args[tmp_name])
+                	if (not args.__dict__[tmp_name].endswith("ZZZ")): #I think this is the correct logic... RMS.  magic number. Ugh.
+                		file_paths_to_check.append(new_args[tmp_name])  
     for fpath in file_paths_to_check:
         assert os.path.isfile(fpath), fpath + " file does NOT exist!"
     new_args["start_time_secs"] = start_time_secs
@@ -185,7 +180,10 @@ def massage_and_validate_args(args, start_time_secs, pretty_start_time, command_
         print("rerundir in cmdlogtime:", new_args["rerun_out_directory"])
     else:
         make_dir(the_out_dir)
-        the_out_dir = os.path.join(the_out_dir, pretty_start_time)
+        pretty_start_time_mod = pretty_start_time
+        if ("out_dir_suffix" in new_args and new_args["out_dir_suffix"] != "AAAAZZZZ"):
+            pretty_start_time_mod = pretty_start_time_mod + "_" + str(new_args["out_dir_suffix"])
+        the_out_dir = os.path.join(the_out_dir, pretty_start_time_mod)
     make_dir(the_out_dir)
     
     for dir in dirs_to_check:
