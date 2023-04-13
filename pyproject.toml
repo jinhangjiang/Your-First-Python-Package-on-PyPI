@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmdlogtime"
+version = "0.0.3"
+
+
+[metadata]
+author = "Ron Stewart"
+author_email = "rstewart@morgridge.org"
+description = "This package does command line processing, allows for logging, and keeps track of start, end, and elapsed time, along with a bunch of other stuff."
+url = "https://github.com/stewart-lab/cmdlogtime"
+
